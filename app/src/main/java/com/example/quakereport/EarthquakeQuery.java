@@ -25,7 +25,7 @@ public class EarthquakeQuery {
     private EarthquakeQuery() {
     }
 
-    public static ArrayList<Earthquake> extractFeaturefromJson(String earthquakeJSON) {
+    public static ArrayList<Earthquake> extractFeatureFromJson(String earthquakeJSON) {
 
         ArrayList<Earthquake> earthquakes = new ArrayList<>();
 
@@ -138,7 +138,7 @@ public class EarthquakeQuery {
         }
 
         // Extract relevant fields from the JSON response and create a list of {@link Earthquake}s
-        List<Earthquake> earthquakes = extractFeaturefromJson(jsonResponse);
+        List<Earthquake> earthquakes = extractFeatureFromJson(jsonResponse);
 
         // Return the list of {@link Earthquake}s
         return earthquakes;
